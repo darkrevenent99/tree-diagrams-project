@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:gravity="center|top"
+	android:orientation="vertical"
+	android:background="#ffff9800"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<ImageView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:src="@drawable/image_1"
+		android:scaleX="0.75"
+		android:scaleY="0.75"/>
+
+	<TextView
+		android:textAppearance="?android:textAppearanceLarge"
+		android:textSize="35.0sp"
+		android:textColor="#ffffffff"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Calculating"/>
+
+	<TextView
+		android:textAppearance="?android:textAppearanceLarge"
+		android:textSize="35.0sp"
+		android:textColor="#ffffffff"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Probabilities"/>
+
+	<TextView
+		android:textAppearance="?android:textAppearanceLarge"
+		android:textColor="#ffffffff"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="By Using"/>
+
+	<TextView
+		android:textAppearance="?android:textAppearanceLarge"
+		android:textSize="35.0sp"
+		android:textColor="#ffffffff"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Tree Diagrams"/>
+
+	<TextView
+		android:textAppearance="?android:textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Test Version 0.3"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Please choose a browser when asked!"
+		android:layout_marginTop="10dp"/>
+
+	<LinearLayout
+		android:gravity="center"
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<Button
+			android:textSize="20.0sp"
+			android:textColor="#ffffffff"
+			android:id="@+id/startBtn"
+			android:background="#ff8cc63f"
+			android:padding="20.0dip"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Start Project"
+			android:shadowDx="5.0"
+			android:shadowDy="5.0"
+			android:shadowRadius="5.0"/>
+
+		<TextView
+			android:textAppearance="?android:textAppearanceSmall"
+			android:textColor="#ffffffff"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="app by Myint Myat Aung"/>
+
+		<ImageView
+			android:layout_height="40dp"
+			android:layout_width="wrap_content"
+			android:src="@drawable/sharelogo"
+			android:id="@+id/shareBtn"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:text="Share!"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:gravity="bottom|center"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="-30.0dip"
+			android:layout_marginBottom="-60.0dip"
+			android:src="@drawable/logoshadowedcopy"
+			android:scaleX="0.4"
+			android:scaleY="0.4"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
