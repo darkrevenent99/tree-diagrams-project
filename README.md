@@ -9,6 +9,7 @@ The web files are too many for uploading to the app directory, so they WILL BE (
 
 
 CURRENT VERSION : 0.3
+
 Current version uses assets external files system. (Unfinished Coding)
 
 The "webproject.zip" WILL (not yet) include the assets folder, which is to be extracted to "app/src/main/java/assets".
