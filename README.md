@@ -2,7 +2,7 @@
 
 A school project about calculating probabilities by using tree diagrams.
 
-This app works as a kickstarter for the full "Calculating Probabilities By Using Tree Diagrams" web project.
+This app works as a kickstarter for the full standalone "Calculating Probabilities By Using Tree Diagrams" web project.
 
 Comes packaged with all the files of the web project. (see current version for more details)
 
