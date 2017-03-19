@@ -20,10 +20,11 @@ public class MainActivity extends Activity
         setContentView(R.layout.main);
 		Button startBtn = (Button) findViewById(R.id.startBtn);
 		ImageView shareBtn = (ImageView) findViewById(R.id.shareBtn);
+		final String FOLDERPATH = "/sdcard/Android/data/com.mma.probability/TreeDiagrams";
 		shareBtn.setOnClickListener(new OnClickListener(){
 				@Override
 				public void onClick(View v) {
-					Log.i("clicks", "jdkdjj");
+					
 					Intent i = new Intent(MainActivity.this, MainActivity2.class);
 					startActivity(i);
 					
@@ -35,27 +36,39 @@ public class MainActivity extends Activity
 				@Override
 				public void onClick(View v) {
 					
-				 	File dir = new File("/sdcard/Tree Diagrams");
-					
-					if(!dir.exists())
+				 	File dir = new File(FOLDERPATH);
+					File dirfile = new File(FOLDERPATH + "/index.html");
+					//File dir = getExternalCacheDir();
+					if(!dirfile.exists())
 						{
-						dir.mkdir();
+						if(!dir.exists()){
+						dir.mkdir();}
 						copyAssetFolder(getAssets(), "Tree Diagrams", 
-										"/sdcard/Tree Diagrams");
+											FOLDERPATH);
 						}
+						//copyAssetFolder(getAssets(), "Tree Diagrams", 
+						//								dir.getAbsolutePath());
+						//				}
 					
 			
-				  	File file = new File("/sdcard/Tree Diagrams/index.html") ;
+				  	File file = new File(FOLDERPATH + "/index.html") ;
 					//Uri uri = Uri.parse("intent:///storage/emulated/0/Tree%20Diagrams/index.html#Intent;scheme=file;type=*/*;launchFlags=0x10000000;B.by_open_as=true;end");//"file:///sdcard/Tree Diagrams/index.html") ;
-					
-					Intent i = new Intent(Intent.ACTION_VIEW);
-				 	i.setDataAndType(Uri.fromFile(file), "*/*");
+					openInBrowser(file);
+					//Intent i = new Intent(Intent.ACTION_VIEW);
+				 	//i.setDataAndType(Uri.fromFile(file), "*/*");
 					//i.setClassName("com.android.chrome", "android.intent.action.VIEW");
-					startActivity(i);
+					//startActivity(i);
 				}
 			});
 		
 	}
+	
+	private void openInBrowser(File file) {
+			final Intent browserIntent = new Intent(Intent.ACTION_VIEW);
+			browserIntent.setDataAndType(Uri.fromFile(file), "*/*");
+			startActivity(browserIntent);
+	}
+	
 	private static boolean copyAssetFolder(AssetManager assetManager,
 										   String fromAssetPath, String toPath) {
         try {
