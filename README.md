@@ -9,7 +9,7 @@ Comes packaged with all the files of the web project. (see current version for m
 The web files are too many for uploading to the app directory, so they are packaged separately in the "webproject.zip" file. (see current version for more details)
 
 
-CURRENT VERSION : 0.4
+CURRENT VERSION : 0.5
 
 Current version uses assets system. (Extracted to "/sdcard/Android/data/com.mma.probability/TreeDiagrams")
 The "webproject.zip" includes the assets folder, which is to be extracted to "app/src/main/java/assets" in app source.
@@ -31,3 +31,7 @@ Fixed recursive qr code issue and UPLOADED PROJECT TO GITHUB! :-D
 Sunday, 19 Mar 2017 :
 Test Version 0.4 released!
 Changed assets extraction directory to app storage to fix "un-unistalling" issue
+
+Thursday, 23 Mar 2017 :
+Test Version 0.5 released!
+Supports screen rotation and many screen sizes! Added Progress Spinner for file copying and changed QR code to lead to master/[apk-name].
